@@ -123,3 +123,7 @@ docs/docs/reference/adapter
 
 ## Drizzle migration folder
 .drizzle
+
+
+#Ignore vscode AI rules
+.github/instructions/codacy.instructions.md
