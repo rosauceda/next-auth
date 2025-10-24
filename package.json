@@ -4,7 +4,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/nextauthjs/next-auth.git"
+    "url": "https://github.com/rosauceda/next-auth.git"
   },
   "scripts": {
     "build:app": "turbo run build --filter=next-auth-app",
