@@ -1,7 +1,7 @@
 {
-  "name": "next-auth-monorepo",
-  "version": "0.0.0",
-  "private": true,
+  "name": "next-auth-community",
+  "version": "5.0.1",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/nextauthjs/next-auth.git"
