@@ -8,7 +8,7 @@
     "clean": "rm -rf dist",
     "build": "pnpm build:ts && pnpm build:css",
     "build:ts": "tsc",
-    "build:css": "tailwindcss -i ./public/css/style.css -o ./public/css/output.css",
+    "build:css": "pnpm exec tailwindcss -i ./public/css/style.css -o ./public/css/output.css",
     "dev": "tsx watch --env-file=.env src/server.ts & pnpm build:css -w",
     "lint": "eslint src/*.ts --fix",
     "prettier": "prettier src/*.ts --write"
