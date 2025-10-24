@@ -1,4 +1,7 @@
-export { auth as middleware } from "auth"
+import { auth } from "auth"
+
+// Export as default for Next.js 16 proxy file
+export default auth
 
 // Or like this if you need to do something here.
 // export default auth((req) => {

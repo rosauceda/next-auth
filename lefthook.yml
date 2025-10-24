@@ -2,5 +2,19 @@ pre-commit:
   parallel: true
   commands:
     format:
+      glob: "*.{js,ts,tsx,jsx,json,md,mdx,yml,yaml}"
       run: pnpm prettier --cache --write {staged_files}
       stage_fixed: true
+    lint:
+      glob: "*.{js,ts,tsx,jsx}"
+      run: pnpm eslint --cache --fix {staged_files}
+      stage_fixed: true
+
+pre-push:
+  parallel: false
+  commands:
+    type-check:
+      run: pnpm turbo run build --filter=[HEAD^1]
+      skip:
+        - merge
+        - rebase

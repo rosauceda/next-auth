@@ -1,1 +1,5 @@
+# Node.js version for development
+# Recommended: Node.js 20 LTS for best compatibility
+# Project supports: ^18.18.0 || ^20.8.0 || ^22.0.0
+# Note: Node 24 has issues with native modules like better-sqlite3
 22

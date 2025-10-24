@@ -1,7 +1,8 @@
 import NextAuth from "next-auth"
 import Credentials from "next-auth/providers/credentials"
-import Keycloak from "next-auth/providers/keycloak"
-import GitHub from "next-auth/providers/github"
+// Commented out to avoid requiring environment variables for development
+// import Keycloak from "next-auth/providers/keycloak"
+// import GitHub from "next-auth/providers/github"
 
 // import { PrismaClient } from "@prisma/client"
 // import { PrismaAdapter } from "@auth/prisma-adapter"
@@ -66,8 +67,13 @@ export const { handlers, auth, signIn, signOut, unstable_update } = NextAuth({
         }
       },
     }),
-    GitHub,
-    Keycloak,
+    // GitHub requires AUTH_GITHUB_ID and AUTH_GITHUB_SECRET in .env.local
+    // Uncomment and configure .env.local to use GitHub
+    // GitHub,
+
+    // Keycloak requires AUTH_KEYCLOAK_ID, AUTH_KEYCLOAK_SECRET, and AUTH_KEYCLOAK_ISSUER in .env.local
+    // Uncomment and configure .env.local to use Keycloak
+    // Keycloak,
   ],
 
   callbacks: {

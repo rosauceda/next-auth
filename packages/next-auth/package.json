@@ -109,7 +109,7 @@
   "devDependencies": {
     "@types/react": "18.0.37",
     "dotenv": "^10.0.0",
-    "next": "15.3.1",
+    "next": "^16.0.0",
     "nodemailer": "^6.9.3",
     "react": "^18.2.0"
   }
